@@ -1,0 +1,258 @@
+body {
+  background-color: #201728;
+  margin: 0;
+  padding: 0;
+}
+
+.top-box {
+  background-image: url("./assets/images/hearo-top.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 92%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 92%);
+}
+
+.top-box .heading {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.top-box .move_icon {
+  margin-left: 97%;
+  margin-top: 0.5%;
+  width: 20px;
+  height: 20px;
+}
+
+.top-box .white_arrow {
+  top: 95%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.box_two {
+  background-color: #70259b;
+  height: 50%;
+  width: 70%;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 420px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+}
+
+.box_two div {
+  font-size: 203%;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+  position: absolute;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.box_two button {
+  border: 2px solid #e100f2;
+  background-color: #70259b;
+  color: white;
+  padding: 12px 30px;
+  font-size: 10px;
+  position: absolute;
+  -webkit-transform: translate(-60%, 100%);
+          transform: translate(-60%, 100%);
+  -webkit-animation-name: about-btn;
+          animation-name: about-btn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box_two .arrow_by_button {
+  -webkit-transform: translate(80%, 340%);
+          transform: translate(80%, 340%);
+}
+
+@-webkit-keyframes about-btn {
+  from {
+    background-color: #6f249b;
+    border: 2px solid #e11c5b;
+    color: white;
+  }
+  to {
+    background-color: #e11c5b;
+    border: 2px solid #6f249b;
+    color: black;
+  }
+}
+
+@keyframes about-btn {
+  from {
+    background-color: #6f249b;
+    border: 2px solid #e11c5b;
+    color: white;
+  }
+  to {
+    background-color: #e11c5b;
+    border: 2px solid #6f249b;
+    color: black;
+  }
+}
+
+.box_three {
+  margin-top: 50%;
+}
+
+.box_three .move_cross {
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  z-index: -1;
+}
+
+.box_three .move_hex {
+  -webkit-transform: translate(80%, -135%);
+          transform: translate(80%, -135%);
+}
+
+.box_three .people {
+  -webkit-transform: translate(10%, -102%);
+          transform: translate(10%, -102%);
+  opacity: 0.8;
+}
+
+.box_three .scribble {
+  -webkit-transform: translate(-120%, -720%);
+          transform: translate(-120%, -720%);
+}
+
+.box_three .cross_arrow {
+  -webkit-transform: translate(50%, -200%);
+          transform: translate(50%, -200%);
+}
+
+.box_three .text-box {
+  -webkit-transform: translate(65%, -55%);
+          transform: translate(65%, -55%);
+  width: 20%;
+  z-index: 1;
+}
+
+.box_three .text-box .title {
+  font-size: 350%;
+  color: white;
+  font-weight: 300;
+}
+
+.box_three .text-box p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+}
+
+.box_three .text-box button {
+  border: 2px solid #ff00f2;
+  background-color: #201728;
+  color: white;
+  padding: 12px 30px;
+  font-size: 10px;
+  position: absolute;
+  -webkit-transform: translate(0%, 50%);
+          transform: translate(0%, 50%);
+  -webkit-animation-name: about-btn;
+          animation-name: about-btn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box_three .text-box .arrow_by_button {
+  -webkit-transform: translate(240%, 190%);
+          transform: translate(240%, 190%);
+}
+
+.box_four {
+  height: 150vh;
+  background-color: #6f249b;
+  margin-top: -100px;
+  -webkit-clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.box_four .circle {
+  position: absolute;
+  -webkit-transform: translate(130%, 55%);
+          transform: translate(130%, 55%);
+}
+
+.box_four .robot {
+  -webkit-transform: translate(20%, 85%);
+          transform: translate(20%, 85%);
+  -webkit-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+}
+
+.box_four .text-box-2 {
+  -webkit-transform: translate(300%, -40%);
+          transform: translate(300%, -40%);
+  width: 20%;
+}
+
+.box_four .title_of_robot {
+  font-size: 300%;
+  font-weight: 400;
+  color: white;
+  -webkit-transform: translate(10%, 10%);
+          transform: translate(10%, 10%);
+}
+
+.box_four p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform: translate(20%, 10%);
+          transform: translate(20%, 10%);
+}
+
+.box_four button {
+  border: 2px solid #ff00f2;
+  background-color: #6f249b;
+  color: white;
+  padding: 12px 30px;
+  font-size: 10px;
+  position: absolute;
+  -webkit-transform: translate(50%, 80%);
+          transform: translate(50%, 80%);
+  -webkit-animation-name: about-btn;
+          animation-name: about-btn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.box_four .arrow_by_button {
+  -webkit-transform: translate(380%, 250%);
+          transform: translate(380%, 250%);
+}
+
+.box_four .arrow_with_cross {
+  float: right;
+  -webkit-transform: translate(-2000%, 0%);
+          transform: translate(-2000%, 0%);
+}
+/*# sourceMappingURL=style.css.map */

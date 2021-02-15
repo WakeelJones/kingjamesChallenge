@@ -1,0 +1,226 @@
+$primary-colour: #70259b;
+$secondary-colour: #201728;
+
+body {
+  background-color: $secondary-colour;
+  margin: 0;
+  padding: 0;
+}
+
+// Top section styling
+.top-box {
+  background-image: url("./assets/images/hearo-top.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 92%);
+  // top section heading styling
+  .heading {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  // icon styling
+  .move_icon {
+    margin-left: 97%;
+    margin-top: 0.5%;
+    width: 20px;
+    height: 20px;
+  }
+  // white arrow styling / positioning
+  .white_arrow {
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}
+
+.box_two {
+  background-color: $primary-colour;
+  height: 50%;
+  width: 70%;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 420px;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+
+  // div styling inside box 2
+  div {
+    font-size: 203%;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    position: absolute;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  // about us button styling
+  button {
+    border: 2px solid rgb(225, 0, 242);
+    background-color: $primary-colour;
+    color: white;
+    padding: 12px 30px;
+    font-size: 10px;
+    position: absolute;
+    transform: translate(-60%, 100%);
+    animation-name: about-btn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  // positioning of arrow next to button and styling
+  .arrow_by_button {
+    transform: translate(80%, 340%);
+  }
+}
+
+@keyframes about-btn {
+  from {
+    background-color: rgb(111, 36, 155);
+    border: 2px solid rgb(225, 28, 91);
+    color: white;
+  }
+  to {
+    background-color: rgb(225, 28, 91);
+    border: 2px solid rgb(111, 36, 155);
+    color: black;
+  }
+}
+
+.box_three {
+  margin-top: 50%;
+  // positioning of cross png
+  .move_cross {
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: -1;
+  }
+  // positioning of hexagon image
+  .move_hex {
+    transform: translate(80%, -135%);
+  }
+  // positioning of the people image
+  .people {
+    transform: translate(10%, -102%);
+    opacity: 0.8;
+  }
+  // positioning of scribble png
+  .scribble {
+    transform: translate(-120%, -720%);
+  }
+  // positioning of cross arrow png
+  .cross_arrow {
+    transform: translate(50%, -200%);
+  }
+  // positioning of text box
+  .text-box {
+    transform: translate(65%, -55%);
+    width: 20%;
+    z-index: 1;
+    // positioning and styling of title in text box
+    .title {
+      font-size: 350%;
+      color: white;
+      font-weight: 300;
+    }
+    // positioning and styling of p tag in text box
+    p {
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 50;
+    }
+    // positioning and styling of button in text box
+    button {
+      border: 2px solid rgb(255, 0, 242);
+      background-color: rgb(32, 23, 40);
+      color: white;
+      padding: 12px 30px;
+      font-size: 10px;
+      position: absolute;
+      transform: translate(0%, 50%);
+      animation-name: about-btn;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    // positioning and styling of arrow next button in text box
+    .arrow_by_button {
+      transform: translate(240%, 190%);
+    }
+  }
+}
+.box_four {
+  height: 150vh;
+  background-color: rgb(111, 36, 155);
+  margin-top: -100px;
+  clip-path: polygon(0 9%, 100% 0%, 100% 100%, 0% 100%);
+
+  // circle gradient image styling and positioning
+  .circle {
+    position: absolute;
+    transform: translate(130%, 55%);
+  }
+
+  // robot image styling and positioning
+  .robot {
+    transform: translate(20%, 85%);
+    -webkit-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 38px 7px rgba(0, 0, 0, 0.75);
+  }
+
+  // text box styling and positioning
+  .text-box-2 {
+    transform: translate(300%, -40%);
+    width: 20%;
+  }
+  // title next to robot image
+  .title_of_robot {
+    font-size: 300%;
+    font-weight: 400;
+    color: white;
+    transform: translate(10%, 10%);
+  }
+
+  // paragraph tag styling
+  p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    transform: translate(20%, 10%);
+  }
+
+  // button styling
+  button {
+    border: 2px solid rgb(255, 0, 242);
+    background-color: rgb(111, 36, 155);
+    color: white;
+    padding: 12px 30px;
+    font-size: 10px;
+    position: absolute;
+    transform: translate(50%, 80%);
+    animation-name: about-btn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  // arrow next to button styling
+  .arrow_by_button {
+    transform: translate(380%, 250%);
+  }
+
+  // arrow with cross styling
+  .arrow_with_cross {
+    float: right;
+    transform: translate(-2000%, 0%);
+  }
+}
